@@ -66,12 +66,12 @@ public class PVRBookingTestCase_001 {
             Thread.sleep(1000);
             
             //Select any one available seat
-            driver.findElement(By.id("SL.SILVER|D:8")).click();
+            driver.findElement(By.xpath("//span[@class='seat-current-pvr']")).click();
             Thread.sleep(1000);
             
             //Click on Proceed button
             driver.findElement(By.xpath("//button[contains(text(),'Proceed')]")).click();
-            Thread.sleep(1000);
+            Thread.sleep(3000);
            
             //Capture and print Seat info from Booking Summary
             WebElement SeatInfo = driver.findElement(By.xpath("//div[@class='seat-info']"));
@@ -88,10 +88,7 @@ public class PVRBookingTestCase_001 {
             Thread.sleep(2000);
             
             //Close the popup if displayed
-            //driver.findElement(By.xpath("(//div[@class='card flex justify-content-center']//span/i[@class='pi pi-times'])[1]")).click();
-            Actions actions = new Actions(driver);
-            WebElement closeBtn = driver.findElement(By.cssSelector("i.pi.pi-times"));
-            actions.moveToElement(closeBtn).click().perform();
+            driver.findElement(By.xpath("(//i[@class='pi pi-times'])[2]")).click();
             Thread.sleep(1000);
            
             //Capture and print current page title
