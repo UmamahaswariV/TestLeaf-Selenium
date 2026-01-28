@@ -30,3 +30,15 @@ public class MissingElementsInArray {
         System.out.println();
     }
 }
+
+-------------------------------------------------------
+i	current		next     	Gap?           Missing
+        get(i) get(i+1)	current+1!=next
+-------------------------------------------------------
+0		1		2			No				-
+1		2		3			No				-
+2		3		4			No				-
+3		4		6			Yes				5
+4		6		8			Yes				7
+5		8		10			Yes				9
+
