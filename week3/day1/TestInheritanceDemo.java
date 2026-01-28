@@ -9,7 +9,6 @@ public class TestData {
 	        System.out.println("Navigating to Home Page...");
 	        System.out.println("URL:https://www.testleaf.com/home");
 	    }
-
 }
 
 public class LoginTestData extends TestData {
