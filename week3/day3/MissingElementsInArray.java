@@ -9,7 +9,6 @@ public class MissingElementsInArray {
         
         // Arrange collection in ascending order
         Collections.sort(list);
-        
         System.out.print("Missing numbers: ");
         
         // Do a comparison check if there is a gap in the sequence of numbers.
