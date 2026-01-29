@@ -1,3 +1,10 @@
+public interface DatabaseConnection {
+	 void connect();
+	 void disconnect();
+	 void executeUpdate();
+
+}
+
 public class JavaConnection implements DatabaseConnection {
 	@Override
 	public void connect() {
