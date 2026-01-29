@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class SecondLargestInArray {
     public static void main(String[] args) {
         // Declare an array {3,2,11,4,6,7}.
