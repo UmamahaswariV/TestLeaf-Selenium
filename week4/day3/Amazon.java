@@ -29,8 +29,13 @@ public class Amazon {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		
 		//Search for "oneplus 9 pro".
+        Actions action = new Actions(driver);
         WebElement searchBox=driver.findElement(By.id("twotabsearchtextbox"));
-        searchBox.sendKeys("oneplus 9 pro",Keys.ENTER);
+        action.click(searchBox)
+        .sendKeys("oneplus 9 pro")
+        .pause(1000)
+        .sendKeys(Keys.ENTER)
+        .build().perform();
         
 		//Get the price of the first product.
         String FirstProductName=driver.findElement(By.xpath("//span[@class='a-size-medium a-color-base'][1]")).getText();
@@ -47,7 +52,6 @@ public class Amazon {
 		System.out.println();
         
 		//Click the first text link of the first image.
-        Actions action = new Actions(driver);
         action.moveToElement(driver.findElement(By.xpath("(//a/h2/span)[1]"))).pause(1000).click().perform();
         
         Set<String> currentlyActiveWindowIds = driver.getWindowHandles();
