@@ -65,7 +65,7 @@ public class Amazon {
 		FileUtils.copyFile(src, Target);
 	    
 		//Click the 'Add to Cart' button.
-		driver.findElement(By.xpath("//input[@name='submit.add-to-cart']")).click();
+		action.moveToElement(driver.findElement(By.xpath("//input[@name='submit.add-to-cart']"))).click().perform();
 		System.out.println("Selected Product is Added to the Cart");
 		Thread.sleep(2000);
 		
