@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite" verbose="5">
+	<parameter name="url" value="http://leaftaps.com/opentaps/control/main"></parameter>
+    <test name="CreateLead" thread-count="5" >
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="username" value="demosalesmanager"></parameter>
+    <parameter name="password" value="crmsfa"></parameter>
+    <classes>
+      <class name="week5.day4.Excelprogram.CreateLead"/>
+    </classes>
+    </test>
+    
+    <test name="EditLead" thread-count="5">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="username" value="demosalesmanager"></parameter>
+    <parameter name="password" value="crmsfa"></parameter>
+    <classes>
+    <class name="week5.day4.Excelprogram.EditLead"/>
+    </classes>
+    </test> <!-- Test -->
+  
+    <test name="MergeLead" thread-count="5">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="username" value="demosalesmanager"></parameter>
+    <parameter name="password" value="crmsfa"></parameter>
+    <classes>
+    <class name="week5.day4.Excelprogram.MergeLead"/>
+    </classes>
+    </test> <!-- Test -->
+  
+    <test name="DuplicateLead" thread-count="5">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="username" value="demosalesmanager"></parameter>
+    <parameter name="password" value="crmsfa"></parameter>
+    <classes>
+    <class name="week5.day4.Excelprogram.DuplicateLead"/>
+    </classes>
+    </test> <!-- Test -->
+  
+    <test name="DeleteLead" thread-count="5">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="username" value="demosalesmanager"></parameter>
+    <parameter name="password" value="crmsfa"></parameter>
+    <classes>
+    <class name="week5.day4.Excelprogram.DeleteLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
