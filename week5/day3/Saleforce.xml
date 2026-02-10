@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite" verbose="5">
+	<parameter name="url" value="https://login.salesforce.com"></parameter>
+	<parameter name="browserName" value="SAFARI"></parameter>
+	<parameter name="username" value="uma12051989.799173caca9e@agentforce.com"></parameter>
+    <parameter name="password" value="Uma@Sale#12"></parameter>
+    <parameter name="CompanyName" value="TestLeaf"></parameter>
+	<parameter name="Description" value="Salesforces"></parameter>
+	<test name="Saleforce_LegalEntities" thread-count="5" >
+    <classes>
+      <class name="week5.day3.Saleforce_LegalEntities"/>
+    </classes>
+  </test>
+
+</suite> <!-- Suite -->
